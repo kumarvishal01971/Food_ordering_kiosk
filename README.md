@@ -27,25 +27,23 @@ A fast and responsive web-based ordering platform developed with Go, HTML5, and 
 ## 📁 Project Structure
 
 
-📦 restaurants_food_ordering/
-├── 📄 main.go
-├── 📂 templates/
-│ ├── 📄 index.html
-│ ├── 📄 menu.html
-│ ├── 📄 order_summary.html
-│ ├── 📄 bill.html
-│ ├── 📄 contact.html
-│ └── 📄 offers.html
-└── 📂 static/
-├── 📄 style.css
-├── 📄 script.js
-└── 📂 images/
-├── 📷 food.jpg
-└── 📷 hero_img.jpg
-
-Pro Tips:
-For perfect al---
-
+```
+restaurants_food_ordering/
+├── main.go
+├── templates/
+│   ├── index.html
+│   ├── menu.html
+│   ├── order_summary.html
+│   ├── bill.html
+│   ├── contact.html
+│   └── offers.html
+└── static/
+    ├── style.css
+    ├── script.js
+    └── images/
+        ├── food.jpg
+        └── hero_img.jpg
+```
 ## 🧑‍🍳 How to Run
 
 1. **Clone the repository**
