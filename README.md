@@ -1,7 +1,6 @@
-# 🍽️ Restaurants Food Ordering System
+# 🍽️ Food Ordering Kiosk
 
-A simple and interactive web-based food ordering system built with **Go**, **HTML**, and **CSS**. It allows users to view a menu, place food orders, and generate a final bill with GST calculation.
-
+A fast and responsive web-based ordering platform developed with Go, HTML5, and CSS3. Enables customers to explore menu items, customize orders, and receive detailed invoices with tax calculations.
 ---
 
 ## 🚀 Features
@@ -17,17 +16,33 @@ A simple and interactive web-based food ordering system built with **Go**, **HTM
 
 ## 🛠️ Built With
 
-- [Go (Golang)](https://golang.org/)
-- HTML & CSS
-- Go's `html/template` package
-
+- Go (Golang)
+- Semantic HTML5
+- CSS3 with Flexbox
+- Native Go templates
 ---
 
 ## 📁 Project Structure
 
 
-restaurants_food_ordering/ ├── main.go ├── templates/ │ ├── index.html │ ├── menu.html │ ├── order_summary.html │ └── bill.html └── static/ └── style.css 
-
+main/
+├── static/
+│   ├── food.jpg                 # Food item images
+│   ├── hero_img.jpg             # Banner image
+│   ├── hotel-logo-design...     # Brand assets
+│   ├── script.js                # Client-side JavaScript 
+│   └── style.css                # Main stylesheet 
+│
+├── templates/
+│   ├── bill.html                # Final invoice
+│   ├── contact.html             # Contact page
+│   ├── index.html               # Homepage 
+│   ├── menu.html                # Food menu
+│   ├── offers.html              # Promotions 
+│   └── order_summary.html       # Cart review
+│
+├── main.go                      # Server logic
+└── README.md                    # Documentation
 
 
 ---
@@ -49,11 +64,13 @@ http://localhost:8080
 
 
 # 🌐 Routes
-/ → Home page
+/ → Home page (index.html)
 
-/menu → Menu display
-/order → Order submission (POST)
+/menu → Menu display (menu.html)
+/order → Order submission (POST) → order_summary.html
 
-/view-order → Order summary with GST
+/offers → Special deals (offers.html)
+/contact → Contact form (contact.html)
 
-/bill → Final bill page
+/view-order → Order summary (order_summary.html)
+/bill → Final bill (bill.html)
