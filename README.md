@@ -48,8 +48,8 @@ restaurants_food_ordering/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/restaurants_food_ordering.git
-   cd restaurants_food_ordering
+   git clone https://github.com/your-username/Food_ordering_kiosk.git
+   cd Restaurants_Food_Ordering
 
 2 **Run the application**
 
