@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Special Offers</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+  <h1 class="special-offers-heading">🎁 Special Offers</h1>
+  <div class="offer-grid" id="offerGrid"></div>
+
+  <script>
+    const offers = [
+    { title: "Buy 1 get 1 free on Lassi", code: "LASSI1+1", emoji: "🎉" },
+    { title: "50% Off on Samosas", code: "SAMOSA50", emoji: "🍕" },
+    { title: "Free Delivery", code: "DELIVERFREE", emoji: "🚚" },
+    { title: "20% Off Combo", code: "COMBO20", emoji: "🍔" },
+    { title: "50% Off First Order", code: "FIRST50", emoji: "🎉" },
+    { title: "Gold Membership - ₹499/Year", code: "GOLD499", emoji: "🏆" } // New Offer
+    ];
+
+    const grid = document.getElementById("offerGrid");
+
+    offers.forEach((offer) => {
+      const card = document.createElement("div");
+      card.className = "card";
+
+      card.innerHTML = `
+        <div class="inner">
+          <div class="front">
+            <div class="emoji">${offer.emoji}</div>
+            <h3>${offer.title}</h3>
+          </div>
+          <div class="back">
+            <p>Use Code:</p>
+            <div class="promo">${offer.code}</div>
+            <button class="copy-btn" onclick="copyCode(event, '${offer.code}')">Copy</button>
+          </div>
+        </div>
+      `;
+
+      card.addEventListener("click", () => {
+        card.classList.toggle("flipped");
+      });
+
+      grid.appendChild(card);
+    });
+
+    function copyCode(event, code) {
+      event.stopPropagation();
+      navigator.clipboard.writeText(code).then(() => {
+        alert(`Code "${code}" copied!`);
+      });
+    }
+  </script>
+
+</body>
+</html>
