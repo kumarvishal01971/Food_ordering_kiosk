@@ -1,7 +1,8 @@
 # 🍽️ Food Ordering Kiosk
 
-
+<p>
 A fast and responsive web-based ordering platform developed with Go, HTML5, and CSS3. Enables customers to explore menu items, customize orders, and receive detailed invoices with tax calculations.
+</p>
 ---
 
 ## 🚀 Features
@@ -27,23 +28,25 @@ A fast and responsive web-based ordering platform developed with Go, HTML5, and 
 
 
 main/
-├── static/
-│   ├── food.jpg                 # Food item images
-│   ├── hero_img.jpg             # Banner image
-│   ├── hotel-logo-design...     # Brand assets
-│   ├── script.js                # Client-side JavaScript 
-│   └── style.css                # Main stylesheet 
-│
-├── templates/
-│   ├── bill.html                # Final invoice
-│   ├── contact.html             # Contact page
-│   ├── index.html               # Homepage 
-│   ├── menu.html                # Food menu
-│   ├── offers.html              # Promotions 
-│   └── order_summary.html       # Cart review
-│
-├── main.go                      # Server logic
-└── README.md                    # Documentation
+- ├── static/
+-     ├── food.jpg                 # Food item images
+-     |── hero_img.jpg             # Banner image
+-     ├── hotel-logo-design...     # Brand assets
+-     ├── script.js                # Client-side JavaScript 
+-     └── style.css                # Main stylesheet 
+
+
+- ├── templates/
+-     ├── bill.html                # Final invoice
+-     ├── contact.html             # Contact page
+-     ├── index.html               # Homepage 
+-     ├── menu.html                # Food menu
+-     ├── offers.html              # Promotions 
+-     └── order_summary.html       # Cart review
+
+
+- ├── main.go                      # Server logic
+- └── README.md                    # Documentation
 
 
 ---
