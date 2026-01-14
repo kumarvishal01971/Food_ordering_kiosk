@@ -55,8 +55,12 @@ func main() {
 
 
 
-	fmt.Println("Server running at http://localhost:8080")
-	http.ListenAndServe(":8080", nil)
+	port := os.Getenv("PORT")
+	if port == "" {
+		port = "8080"
+	}
+	fmt.Println("Server running on port", port)
+	http.ListenAndServe(":"+port, nil)
 }
 
 func homeHandler(w http.ResponseWriter, r *http.Request) {
@@ -174,3 +178,4 @@ func contactHandler(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
 	}
 }
+
